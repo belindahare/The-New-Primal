@@ -1,4 +1,5 @@
-
+body{
+	background-image:('../Images/NP.jpg');
 }
 .col-xs-12.backgroundImage{
 	background-image: url('../Images/NP.jpg');
