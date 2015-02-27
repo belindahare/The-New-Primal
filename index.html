@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The New Primal</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="JS/flipclock.min.js"></script>
+<link rel="stylesheet" href="CSS/flipclock.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!-- 
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+</head>
+<body>
+	<header>
+
+	</header>
+<div class="col-xs-12 backgroundImage">
+
+		<div class="col-xs-8 clock_wrapper">
+		<div class="sarahs_clock"></div>
+
+	</div>
+</div>
+	<footer></footer>
+<script>
+var date  = new Date(Date.UTC(2015, 3, 4, 0, 0, 0));
+var now   = new Date();
+var diff  = date.getTime()/1000 - now.getTime()/1000;
+
+var clock = $('.sarahs_clock').FlipClock(diff, { 
+    clockFace: 'DailyCounter',
+    countdown: true
+});
+</script>
+
+</body>
+</html>
